@@ -1,0 +1,506 @@
+25-02-20.18:11:56.113 [main            ] INFO  WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.9) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.9) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+25-02-20.18:11:56.152 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-20.18:11:56.157 [main            ] INFO  Application            - Starting Application using Java 1.8.0_402 on mokeke with PID 65392 (E:\start\mkk-market\mkk-market-app\target\classes started by 98738 in E:\start\mkk-market)
+25-02-20.18:11:56.157 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-02-20.18:11:57.486 [main            ] INFO  FrameworkModel         -  [DUBBO] Reset global default framework from null to Dubbo Framework[1], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.486 [main            ] INFO  FrameworkModel         -  [DUBBO] Dubbo Framework[1] is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.523 [main            ] INFO  ApplicationModel       -  [DUBBO] Dubbo Application[1.0](unknown) is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.523 [main            ] INFO  ScopeModel             -  [DUBBO] Dubbo Module[1.0.0] is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.555 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.555 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.601 [main            ] INFO  FrameworkModel         -  [DUBBO] Reset global default application from null to Dubbo Application[1.1](unknown), dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.601 [main            ] INFO  ApplicationModel       -  [DUBBO] Dubbo Application[1.1](unknown) is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.601 [main            ] INFO  ScopeModel             -  [DUBBO] Dubbo Module[1.1.0] is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.606 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.606 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.616 [main            ] INFO  DubboSpringInitializer -  [DUBBO] Use default application: Dubbo Application[1.1](unknown), dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.616 [main            ] INFO  ScopeModel             -  [DUBBO] Dubbo Module[1.1.1] is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.618 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.621 [main            ] INFO  DubboSpringInitializer -  [DUBBO] Use default module model of target application: Dubbo Module[1.1.1], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.621 [main            ] INFO  DubboSpringInitializer -  [DUBBO] Bind Dubbo Module[1.1.1] to spring container: org.springframework.beans.factory.support.DefaultListableBeanFactory@57eda880, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.859 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-20.18:11:57.860 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-20.18:11:57.884 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-02-20.18:11:57.953 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.953 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.956 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] Found 1 classes annotated by Dubbo @Service under package [com.mkkvlog]: [com.mkkvlog.trigger.rpc.UserService], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.963 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] Register ServiceBean[ServiceBean:com.mkkvlog.api.IUserService:1.0.0]: Root bean: class [org.apache.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.964 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.964 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.964 [main            ] WARN  ServiceAnnotationPostProcessor -  [DUBBO] No class annotated by Dubbo @Service was found under package [cn.bugstack.api], ignore re-scanned classes: 0, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:57.976 [main            ] INFO  ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+25-02-20.18:11:57.976 [main            ] INFO  ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+25-02-20.18:11:58.454 [main            ] INFO  ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+25-02-20.18:11:58.864 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-02-20.18:11:58.882 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-02-20.18:11:58.882 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-02-20.18:11:58.882 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-02-20.18:11:58.951 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-02-20.18:11:58.951 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2597 ms
+25-02-20.18:11:59.292 [main            ] INFO  DubboConfigBeanInitializer - loading dubbo config beans ...
+25-02-20.18:11:59.293 [main            ] INFO  DubboConfigBeanInitializer - dubbo config beans are loaded.
+25-02-20.18:11:59.326 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] No value is configured in the registry, the DynamicConfigurationFactory extension[name : nacos] supports as the config center, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:59.326 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] The registry[<dubbo:registry id="nacos-registry" address="nacos://127.0.0.1:8848" protocol="nacos" port="8848" />] will be used as the config center, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:59.330 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] use registry as config-center: <dubbo:config-center highestPriority="false" id="config-center-nacos-127.0.0.1-8848" address="nacos://127.0.0.1:8848" protocol="nacos" port="8848" />, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:11:59.373 [main            ] INFO  ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+25-02-20.18:11:59.373 [main            ] INFO  ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+25-02-20.18:12:07.293 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:07.293 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:07.328 [main            ] INFO  DefaultModuleDeployer  -  [DUBBO] Dubbo Module[1.1.0] has been initialized!, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:07.330 [main            ] INFO  DefaultModuleDeployer  -  [DUBBO] Dubbo Module[1.1.1] has been initialized!, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:07.334 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] No value is configured in the registry, the MetadataReportFactory extension[name : nacos] supports as the metadata center, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:07.334 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] The registry[<dubbo:registry id="nacos-registry" address="nacos://127.0.0.1:8848" protocol="nacos" port="8848" />] will be used as the metadata center, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:07.336 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] use registry as metadata-center: <dubbo:metadata-report id="nacos-registry" address="nacos://127.0.0.1:8848" protocol="nacos" port="8848" />, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:07.410 [main            ] INFO  ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+25-02-20.18:12:07.410 [main            ] INFO  ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+25-02-20.18:12:07.411 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] Dubbo Application[1.1](xfg-frame-archetype-std) has been initialized!, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:09.156 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-20.18:12:11.065 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[] result: true
+25-02-20.18:12:11.164 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[] result: true
+25-02-20.18:12:12.348 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/mkkvlog/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+25-02-20.18:12:12.356 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-02-20.18:12:12.371 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+25-02-20.18:12:12.398 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/mkkvlog/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.mkkvlog.Application.main(Application.java:14)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/mkkvlog/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 33 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$0(ConnectionPool.java:132)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.connection.pool.ConnectionPool.promiseFailure(ConnectionPool.java:294)
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$6(ConnectionPool.java:253)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.client.RedisClient$1$1.run(RedisClient.java:248)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.CompletionException: org.redisson.client.RedisException: ERR Client sent AUTH, but no password is set. channel: [id: 0x78624b42, L:/127.0.0.1:6758 - R:127.0.0.1/127.0.0.1:6379] command: (AUTH), params: (password masked)
+	at java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:326)
+	at java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:338)
+	at java.util.concurrent.CompletableFuture.uniRelay(CompletableFuture.java:925)
+	at java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:913)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.client.protocol.CommandData.tryFailure(CommandData.java:87)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:381)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:205)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	... 4 common frames omitted
+Caused by: org.redisson.client.RedisException: ERR Client sent AUTH, but no password is set. channel: [id: 0x78624b42, L:/127.0.0.1:6758 - R:127.0.0.1/127.0.0.1:6379] command: (AUTH), params: (password masked)
+	... 23 common frames omitted
+25-02-20.18:12:15.418 [Thread-16       ] WARN  NotifyCenter           - [NotifyCenter] Start destroying Publisher
+25-02-20.18:12:15.419 [DubboShutdownHook] INFO  DubboShutdownHook      -  [DUBBO] Run shutdown hook now., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:15.418 [Thread-11       ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Start destroying common HttpClient
+25-02-20.18:12:15.419 [DubboShutdownHook] INFO  FrameworkModel         -  [DUBBO] Reset global default application from Dubbo Application[1.1](xfg-frame-archetype-std) to null, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:15.419 [Thread-16       ] WARN  NotifyCenter           - [NotifyCenter] Destruction of the end
+25-02-20.18:12:15.419 [DubboShutdownHook] INFO  DefaultApplicationDeployer -  [DUBBO] Dubbo Application[1.1](xfg-frame-archetype-std) is stopping., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:15.419 [DubboShutdownHook] INFO  RegistryManager        -  [DUBBO] Close all registries [], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:43.276 [main            ] INFO  WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.9) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.9) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+25-02-20.18:12:43.314 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-20.18:12:43.319 [main            ] INFO  Application            - Starting Application using Java 1.8.0_402 on mokeke with PID 29184 (E:\start\mkk-market\mkk-market-app\target\classes started by 98738 in E:\start\mkk-market)
+25-02-20.18:12:43.319 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-02-20.18:12:44.299 [main            ] INFO  FrameworkModel         -  [DUBBO] Reset global default framework from null to Dubbo Framework[1], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.300 [main            ] INFO  FrameworkModel         -  [DUBBO] Dubbo Framework[1] is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.329 [main            ] INFO  ApplicationModel       -  [DUBBO] Dubbo Application[1.0](unknown) is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.329 [main            ] INFO  ScopeModel             -  [DUBBO] Dubbo Module[1.0.0] is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.353 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.353 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.397 [main            ] INFO  FrameworkModel         -  [DUBBO] Reset global default application from null to Dubbo Application[1.1](unknown), dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.397 [main            ] INFO  ApplicationModel       -  [DUBBO] Dubbo Application[1.1](unknown) is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.397 [main            ] INFO  ScopeModel             -  [DUBBO] Dubbo Module[1.1.0] is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.403 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.403 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.415 [main            ] INFO  DubboSpringInitializer -  [DUBBO] Use default application: Dubbo Application[1.1](unknown), dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.415 [main            ] INFO  ScopeModel             -  [DUBBO] Dubbo Module[1.1.1] is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.418 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.421 [main            ] INFO  DubboSpringInitializer -  [DUBBO] Use default module model of target application: Dubbo Module[1.1.1], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.422 [main            ] INFO  DubboSpringInitializer -  [DUBBO] Bind Dubbo Module[1.1.1] to spring container: org.springframework.beans.factory.support.DefaultListableBeanFactory@53d1b9b3, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.630 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-20.18:12:44.632 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-20.18:12:44.647 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+25-02-20.18:12:44.706 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.706 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.708 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] Found 1 classes annotated by Dubbo @Service under package [com.mkkvlog]: [com.mkkvlog.trigger.rpc.UserService], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.716 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] Register ServiceBean[ServiceBean:com.mkkvlog.api.IUserService:1.0.0]: Root bean: class [org.apache.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.717 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.717 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.718 [main            ] WARN  ServiceAnnotationPostProcessor -  [DUBBO] No class annotated by Dubbo @Service was found under package [cn.bugstack.api], ignore re-scanned classes: 0, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:44.785 [main            ] INFO  ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+25-02-20.18:12:44.786 [main            ] INFO  ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+25-02-20.18:12:45.195 [main            ] INFO  ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+25-02-20.18:12:45.585 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-02-20.18:12:45.591 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-02-20.18:12:45.592 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-02-20.18:12:45.592 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-02-20.18:12:45.647 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-02-20.18:12:45.647 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2125 ms
+25-02-20.18:12:45.973 [main            ] INFO  DubboConfigBeanInitializer - loading dubbo config beans ...
+25-02-20.18:12:45.974 [main            ] INFO  DubboConfigBeanInitializer - dubbo config beans are loaded.
+25-02-20.18:12:46.009 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] No value is configured in the registry, the DynamicConfigurationFactory extension[name : nacos] supports as the config center, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:46.010 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] The registry[<dubbo:registry id="nacos-registry" address="nacos://127.0.0.1:8848" protocol="nacos" port="8848" />] will be used as the config center, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:46.014 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] use registry as config-center: <dubbo:config-center highestPriority="false" id="config-center-nacos-127.0.0.1-8848" address="nacos://127.0.0.1:8848" protocol="nacos" port="8848" />, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:46.061 [main            ] INFO  ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+25-02-20.18:12:46.061 [main            ] INFO  ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+25-02-20.18:12:53.946 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:53.947 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:53.989 [main            ] INFO  DefaultModuleDeployer  -  [DUBBO] Dubbo Module[1.1.0] has been initialized!, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:53.991 [main            ] INFO  DefaultModuleDeployer  -  [DUBBO] Dubbo Module[1.1.1] has been initialized!, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:53.994 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] No value is configured in the registry, the MetadataReportFactory extension[name : nacos] supports as the metadata center, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:53.994 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] The registry[<dubbo:registry id="nacos-registry" address="nacos://127.0.0.1:8848" protocol="nacos" port="8848" />] will be used as the metadata center, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:53.997 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] use registry as metadata-center: <dubbo:metadata-report id="nacos-registry" address="nacos://127.0.0.1:8848" protocol="nacos" port="8848" />, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:54.055 [main            ] INFO  ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+25-02-20.18:12:54.055 [main            ] INFO  ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+25-02-20.18:12:54.055 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] Dubbo Application[1.1](xfg-frame-archetype-std) has been initialized!, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:12:55.744 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-20.18:12:57.655 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[] result: true
+25-02-20.18:12:57.743 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[] result: true
+25-02-20.18:12:58.957 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/mkkvlog/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+25-02-20.18:12:58.979 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-02-20.18:12:59.019 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+25-02-20.18:12:59.059 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/mkkvlog/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.mkkvlog.Application.main(Application.java:14)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/mkkvlog/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 33 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$0(ConnectionPool.java:132)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.connection.pool.ConnectionPool.promiseFailure(ConnectionPool.java:294)
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$6(ConnectionPool.java:253)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.client.RedisClient$1$1.run(RedisClient.java:248)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.CompletionException: org.redisson.client.RedisException: ERR Client sent AUTH, but no password is set. channel: [id: 0x32bb245a, L:/127.0.0.1:7018 - R:127.0.0.1/127.0.0.1:6379] command: (AUTH), params: (password masked)
+	at java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:326)
+	at java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:338)
+	at java.util.concurrent.CompletableFuture.uniRelay(CompletableFuture.java:925)
+	at java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:913)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.client.protocol.CommandData.tryFailure(CommandData.java:87)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:381)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:205)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	... 4 common frames omitted
+Caused by: org.redisson.client.RedisException: ERR Client sent AUTH, but no password is set. channel: [id: 0x32bb245a, L:/127.0.0.1:7018 - R:127.0.0.1/127.0.0.1:6379] command: (AUTH), params: (password masked)
+	... 23 common frames omitted
+25-02-20.18:13:02.036 [DubboShutdownHook] INFO  DubboShutdownHook      -  [DUBBO] Run shutdown hook now., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:13:02.037 [DubboShutdownHook] INFO  FrameworkModel         -  [DUBBO] Reset global default application from Dubbo Application[1.1](xfg-frame-archetype-std) to null, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:13:02.037 [DubboShutdownHook] INFO  DefaultApplicationDeployer -  [DUBBO] Dubbo Application[1.1](xfg-frame-archetype-std) is stopping., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:13:02.039 [DubboShutdownHook] INFO  RegistryManager        -  [DUBBO] Close all registries [], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:13:02.041 [Thread-15       ] WARN  NotifyCenter           - [NotifyCenter] Start destroying Publisher
+25-02-20.18:13:02.041 [Thread-9        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Start destroying common HttpClient
+25-02-20.18:13:02.041 [Thread-15       ] WARN  NotifyCenter           - [NotifyCenter] Destruction of the end
+25-02-20.18:18:51.777 [main            ] INFO  WelcomeLogoApplicationListener - 
+
+ :: Dubbo Spring Boot (v3.0.9) : https://github.com/apache/dubbo-spring-boot-project
+ :: Dubbo (v3.0.9) : https://github.com/apache/dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+25-02-20.18:18:51.819 [background-preinit] INFO  Version                - HV000001: Hibernate Validator 6.2.5.Final
+25-02-20.18:18:51.823 [main            ] INFO  Application            - Starting Application using Java 1.8.0_402 on mokeke with PID 63604 (E:\start\mkk-market\mkk-market-app\target\classes started by 98738 in E:\start\mkk-market)
+25-02-20.18:18:51.823 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-02-20.18:18:52.900 [main            ] INFO  FrameworkModel         -  [DUBBO] Reset global default framework from null to Dubbo Framework[1], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:52.901 [main            ] INFO  FrameworkModel         -  [DUBBO] Dubbo Framework[1] is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:52.943 [main            ] INFO  ApplicationModel       -  [DUBBO] Dubbo Application[1.0](unknown) is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:52.944 [main            ] INFO  ScopeModel             -  [DUBBO] Dubbo Module[1.0.0] is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:52.989 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:52.989 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.060 [main            ] INFO  FrameworkModel         -  [DUBBO] Reset global default application from null to Dubbo Application[1.1](unknown), dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.060 [main            ] INFO  ApplicationModel       -  [DUBBO] Dubbo Application[1.1](unknown) is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.060 [main            ] INFO  ScopeModel             -  [DUBBO] Dubbo Module[1.1.0] is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.069 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.070 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.086 [main            ] INFO  DubboSpringInitializer -  [DUBBO] Use default application: Dubbo Application[1.1](unknown), dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.086 [main            ] INFO  ScopeModel             -  [DUBBO] Dubbo Module[1.1.1] is created, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.090 [main            ] INFO  AbstractConfigManager  -  [DUBBO] Config settings: {dubbo.config.mode=STRICT, dubbo.config.ignore-duplicated-interface=false}, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.095 [main            ] INFO  DubboSpringInitializer -  [DUBBO] Use default module model of target application: Dubbo Module[1.1.1], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.095 [main            ] INFO  DubboSpringInitializer -  [DUBBO] Bind Dubbo Module[1.1.1] to spring container: org.springframework.beans.factory.support.DefaultListableBeanFactory@34997338, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.447 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-02-20.18:18:53.450 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-02-20.18:18:53.486 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+25-02-20.18:18:53.604 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.604 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.607 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] Found 1 classes annotated by Dubbo @Service under package [com.mkkvlog]: [com.mkkvlog.trigger.rpc.UserService], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.620 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] Register ServiceBean[ServiceBean:com.mkkvlog.api.IUserService:1.0.0]: Root bean: class [org.apache.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.621 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.621 [main            ] INFO  ServiceAnnotationPostProcessor -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.621 [main            ] WARN  ServiceAnnotationPostProcessor -  [DUBBO] No class annotated by Dubbo @Service was found under package [cn.bugstack.api], ignore re-scanned classes: 0, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:53.639 [main            ] INFO  ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+25-02-20.18:18:53.639 [main            ] INFO  ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+25-02-20.18:18:54.246 [main            ] INFO  ReferenceAnnotationBeanPostProcessor - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+25-02-20.18:18:54.755 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-02-20.18:18:54.766 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-02-20.18:18:54.766 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-02-20.18:18:54.766 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-02-20.18:18:54.850 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-02-20.18:18:54.850 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2799 ms
+25-02-20.18:18:55.290 [main            ] INFO  DubboConfigBeanInitializer - loading dubbo config beans ...
+25-02-20.18:18:55.292 [main            ] INFO  DubboConfigBeanInitializer - dubbo config beans are loaded.
+25-02-20.18:18:55.332 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] No value is configured in the registry, the DynamicConfigurationFactory extension[name : nacos] supports as the config center, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:55.333 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] The registry[<dubbo:registry id="nacos-registry" address="nacos://127.0.0.1:8848" protocol="nacos" port="8848" />] will be used as the config center, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:55.337 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] use registry as config-center: <dubbo:config-center highestPriority="false" id="config-center-nacos-127.0.0.1-8848" address="nacos://127.0.0.1:8848" protocol="nacos" port="8848" />, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:18:55.392 [main            ] INFO  ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+25-02-20.18:18:55.392 [main            ] INFO  ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+25-02-20.18:19:03.268 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:19:03.269 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:19:03.302 [main            ] INFO  DefaultModuleDeployer  -  [DUBBO] Dubbo Module[1.1.0] has been initialized!, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:19:03.305 [main            ] INFO  DefaultModuleDeployer  -  [DUBBO] Dubbo Module[1.1.1] has been initialized!, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:19:03.311 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] No value is configured in the registry, the MetadataReportFactory extension[name : nacos] supports as the metadata center, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:19:03.312 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] The registry[<dubbo:registry id="nacos-registry" address="nacos://127.0.0.1:8848" protocol="nacos" port="8848" />] will be used as the metadata center, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:19:03.314 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] use registry as metadata-center: <dubbo:metadata-report id="nacos-registry" address="nacos://127.0.0.1:8848" protocol="nacos" port="8848" />, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:19:03.401 [main            ] INFO  ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+25-02-20.18:19:03.401 [main            ] INFO  ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+25-02-20.18:19:03.401 [main            ] INFO  DefaultApplicationDeployer -  [DUBBO] Dubbo Application[1.1](xfg-frame-archetype-std) has been initialized!, dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:19:05.080 [main            ] INFO  Version                - Redisson 3.23.4
+25-02-20.18:19:06.991 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[] result: true
+25-02-20.18:19:07.082 [NettyClientSelector_1] INFO  RocketmqRemoting       - closeChannel: close the connection to remote address[] result: true
+25-02-20.18:19:08.257 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/mkkvlog/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+25-02-20.18:19:08.262 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-02-20.18:19:08.271 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+25-02-20.18:19:08.289 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/mkkvlog/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.mkkvlog.Application.main(Application.java:14)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/mkkvlog/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 33 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6379
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$0(ConnectionPool.java:132)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.connection.pool.ConnectionPool.promiseFailure(ConnectionPool.java:294)
+	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$6(ConnectionPool.java:253)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.client.RedisClient$1$1.run(RedisClient.java:248)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.CompletionException: org.redisson.client.RedisException: ERR Client sent AUTH, but no password is set. channel: [id: 0xdb7dffd0, L:/127.0.0.1:4421 - R:127.0.0.1/127.0.0.1:6379] command: (AUTH), params: (password masked)
+	at java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:326)
+	at java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:338)
+	at java.util.concurrent.CompletableFuture.uniRelay(CompletableFuture.java:925)
+	at java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:913)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.client.protocol.CommandData.tryFailure(CommandData.java:87)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:381)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:205)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:144)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:120)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:529)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	... 4 common frames omitted
+Caused by: org.redisson.client.RedisException: ERR Client sent AUTH, but no password is set. channel: [id: 0xdb7dffd0, L:/127.0.0.1:4421 - R:127.0.0.1/127.0.0.1:6379] command: (AUTH), params: (password masked)
+	... 23 common frames omitted
+25-02-20.18:19:10.322 [Thread-12       ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Start destroying common HttpClient
+25-02-20.18:19:10.322 [DubboShutdownHook] INFO  DubboShutdownHook      -  [DUBBO] Run shutdown hook now., dubbo version: 3.0.9, current host: 26.26.26.1
+25-02-20.18:19:10.322 [DubboShutdownHook] INFO  FrameworkModel         -  [DUBBO] Reset global default application from Dubbo Application[1.1](xfg-frame-archetype-std) to null, dubbo version: 3.0.9, current host: 26.26.26.1

@@ -30,7 +30,6 @@ redis:
     config:
       host: 127.0.0.1
       port: 6379
-      password:
       pool-size: 10
       database: 3
       min-idle-size: 5

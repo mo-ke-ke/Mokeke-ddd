@@ -1,5 +1,5 @@
 CONTAINER_NAME=${artifactId}
-IMAGE_NAME=system/${artifactId}:${version}
+IMAGE_NAME=my_ubuntu22.04/${artifactId}:${version}
 PORT=8091
 
 echo "容器部署开始 ${CONTAINER_NAME}"
