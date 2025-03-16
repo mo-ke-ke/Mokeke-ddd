@@ -1,4 +1,4 @@
-package com.mkkvlog.xfg.frame.trigger.http;
+package com.mkkvlog.trigger.http;
 
 import com.mkkvlog.types.common.Constants;
 import com.mkkvlog.types.model.Response;

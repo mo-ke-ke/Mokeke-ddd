@@ -10,7 +10,7 @@ services:
   # 注册中心 https://github.com/nacos-group/nacos-docker - 其他配置可参考(集群)
   # http://127.0.0.1:8848/nacos 【账号：nacos 密码：nacos】
   nacos:
-    image: nacos/nacos-server:v2.2.3-slim
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/nacos-server:v2.2.3-slim
     container_name: nacos
     restart: always
     ports:
@@ -39,7 +39,7 @@ services:
   # http://127.0.0.1:9090/xxl-job-admin admin/123456 - 安装后稍等会访问即可
   # 官网镜像为 xuxueli/xxl-job-admin:2.4.0 但不支持ARM架构【需要自己打包】，所以找了一个 kuschzzp/xxl-job-aarch64:2.4.0 镜像支持 AMD/ARM
   xxl-job-admin:
-    image: xuxueli/xxl-job-admin:2.4.0
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/xxl-job-admin:2.4.0
     container_name: xxl-job-admin
     restart: always
     depends_on:
@@ -53,7 +53,7 @@ services:
       - ./data/logs:/data/applogs
       - ./data/xxl-job/:/xxl-job
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/xxl_job?serverTimezone=UTC&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Shanghai
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:23306/xxl_job?serverTimezone=UTC&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Shanghai
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=123456
       - SERVER_PORT=9090
@@ -61,27 +61,41 @@ services:
       - my-network
 
   # MySQL 增加健康检测，避免
+  mysql-job-dbdata:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/alpine:3.18.2
+    container_name: mysql-job-dbdata
+    networks:
+      - my-network
+    volumes:
+      - "E:/docker/mysql:/var/lib/mysql"  # ✅ 绝对路径
+    command:  # 初始化数据目录（可选操作）
+      - sh
+      - -c
+      - |
+        chmod 777 /var/lib/mysql
+    restart: on-failure  # 初始化完成后无需保持运行
+
+  # MySQL 主服务
   mysql:
-    image: mysql:8.0.32
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/mysql:8.0.32
     container_name: mysql
     hostname: mysql
-    command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: 123456
-      MYSQL_USER: xfg
-      MYSQL_PASSWORD: 123456
+    command: --default-authentication-plugin=mysql_native_password
     networks:
       - my-network
     depends_on:
-      - mysql-job-dbdata
+      - mysql-job-dbdata  # 确保数据目录先初始化
     ports:
-      - "13306:3306"
+      - "23306:3306"
     volumes:
-      - ./sql:/docker-entrypoint-initdb.d
+      - "E:/docker/mysql:/var/lib/mysql"  # ✅ 复用同一数据目录
+      - "E:/docker/sql:/docker-entrypoint-initdb.d"  # 初始化脚本目录
     healthcheck:
-      test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
+      test: [ "CMD", "mysqladmin", "ping", "-u", "root", "-p123456" ]  # 带密码认证
       interval: 5s
       timeout: 10s
       retries: 10
@@ -91,19 +105,12 @@ services:
         limits:
           cpus: '1.00'
           memory: 512M
-    volumes_from:
-      - mysql-job-dbdata
 
-  # 自动加载数据
-  mysql-job-dbdata:
-    image: alpine:3.18.2
-    container_name: mysql-job-dbdata
-    volumes:
-      - /var/lib/mysql
+
 
   # phpmyadmin https://hub.docker.com/_/phpmyadmin
   phpmyadmin:
-    image: phpmyadmin:5.2.1
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/phpmyadmin:5.2.1
     container_name: phpmyadmin
     hostname: phpmyadmin
     ports:
@@ -118,7 +125,7 @@ services:
 
   # RedisAdmin https://github.com/joeferner/redis-commander
   redis-admin:
-    image: spryker/redis-commander:0.8.0
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/redis-commander:0.8.0
     container_name: redis-admin
     hostname: redis-commander
     restart: always
@@ -134,15 +141,15 @@ services:
 
   # Redis
   redis:
-    image: redis:7.2.0
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/redis:7.2
     container_name: redis
     restart: always
     hostname: redis
     ports:
-      - 6379:6379
+      - 6380:6379
     volumes:
-      - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
-    command: redis-server /usr/local/etc/redis/redis.conf
+      - "E:/docker/redis/redis.conf:/usr/local/etc/redis/redis.conf"  # ✅ 正确路径格式
+    command: redis-server /usr/local/etc/redis/redis.conf  # ✅ 强制加载自定义配置
     networks:
       - my-network
     healthcheck:
@@ -156,7 +163,7 @@ services:
   # 01：data/rocketmq/conf/broker.conf 添加 brokerIP1=127.0.0.1
   # 02：data/console/config/application.properties server.port=9009 - 如果8080端口被占用，可以修改或者添加映射端口
   rocketmq:
-    image: livinphp/rocketmq:5.1.0
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/rocketmq:5.1.0
     container_name: rocketmq
     ports:
       - 8080:8080
@@ -165,7 +172,7 @@ services:
       - 10911:10911
       - 10912:10912
     volumes:
-      - ./rocketmq/data:/home/app/data
+      - "E:/docker/rocketmq/data:/home/app/data"
     environment:
       TZ: "Asia/Shanghai"
       NAMESRV_ADDR: "rocketmq:9876"

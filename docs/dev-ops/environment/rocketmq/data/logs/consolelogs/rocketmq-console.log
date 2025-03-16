@@ -1,0 +1,190 @@
+[2025-03-05 00:41:29.130]  INFO Starting App v1.0.0 on d0d8ace72ba7 with PID 159 (/home/app/console/rocketmq-console.jar started by app in /home/app/console)
+[2025-03-05 00:41:29.155]  INFO No active profile set, falling back to default profiles: default
+[2025-03-05 00:41:31.878]  INFO Tomcat initialized with port(s): 8080 (http)
+[2025-03-05 00:41:31.889]  INFO Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+[2025-03-05 00:41:31.891]  INFO Starting service [Tomcat]
+[2025-03-05 00:41:31.895]  INFO Starting Servlet engine: [Apache Tomcat/9.0.29]
+[2025-03-05 00:41:31.950]  INFO Initializing Spring embedded WebApplicationContext
+[2025-03-05 00:41:31.951]  INFO Root WebApplicationContext: initialization completed in 2672 ms
+[2025-03-05 00:41:32.854]  INFO configure file is ./store/users.properties
+[2025-03-05 00:41:32.896]  INFO Try to start service thread:FileWatchService started:false lastThread:null
+[2025-03-05 00:41:32.899]  INFO Succeed to start FileWatcherService
+[2025-03-05 00:41:32.900]  INFO FileWatchService service started
+[2025-03-05 00:41:33.748]  INFO Initializing ExecutorService 'applicationTaskExecutor'
+[2025-03-05 00:41:33.896]  INFO Adding welcome page: class path resource [static/index.html]
+[2025-03-05 00:41:34.175]  INFO Initializing ExecutorService 'taskScheduler'
+[2025-03-05 00:41:34.205]  INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+[2025-03-05 00:41:34.323]  INFO Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+[2025-03-05 00:41:34.362]  INFO Tomcat started on port(s): 8080 (http) with context path ''
+[2025-03-05 00:41:34.367]  INFO Started App in 6.087 seconds (JVM running for 6.997)
+[2025-03-05 00:42:00.797]  INFO Try to start service thread:PullMessageService started:false lastThread:null
+[2025-03-05 00:42:00.798]  INFO Try to start service thread:RebalanceService started:false lastThread:null
+[2025-03-05 00:42:00.802]  INFO create MQAdmin instance ClientConfig [namesrvAddr=rocketmq:9876, clientIP=172.18.0.3, instanceName=1741106520606, clientCallbackExecutorThreads=16, pollNameServerInterval=30000, heartbeatBrokerInterval=30000, persistConsumerOffsetInterval=5000, pullTimeDelayMillsWhenException=1000, unitMode=false, unitName=null, vipChannelEnabled=true, useTLS=false, language=JAVA, namespace=null] success.
+[2025-03-05 00:42:32.924]  INFO start time: 2.925 μs
+[2025-03-05 00:42:32.931]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:42:32.931]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:43:32.204]  INFO start time: 972.0 ns
+[2025-03-05 00:43:32.208]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:43:32.209]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:44:33.089]  INFO start time: 1.306 μs
+[2025-03-05 00:44:33.093]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:44:33.093]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:45:33.384]  INFO start time: 1.172 μs
+[2025-03-05 00:45:33.388]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:45:33.390]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:46:31.638]  INFO start time: 626.0 ns
+[2025-03-05 00:46:31.641]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:46:31.641]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:47:33.216]  INFO start time: 743.0 ns
+[2025-03-05 00:47:33.221]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:47:33.222]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:48:33.340]  INFO start time: 2.576 μs
+[2025-03-05 00:48:33.345]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:48:33.346]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:49:33.385]  INFO start time: 7.949 μs
+[2025-03-05 00:49:33.391]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:49:33.395]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:51:52.972]  INFO Starting App v1.0.0 on d0d8ace72ba7 with PID 159 (/home/app/console/rocketmq-console.jar started by app in /home/app/console)
+[2025-03-05 00:51:52.975]  INFO No active profile set, falling back to default profiles: default
+[2025-03-05 00:51:55.009]  INFO Tomcat initialized with port(s): 8080 (http)
+[2025-03-05 00:51:55.030]  INFO Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+[2025-03-05 00:51:55.033]  INFO Starting service [Tomcat]
+[2025-03-05 00:51:55.033]  INFO Starting Servlet engine: [Apache Tomcat/9.0.29]
+[2025-03-05 00:51:55.119]  INFO Initializing Spring embedded WebApplicationContext
+[2025-03-05 00:51:55.120]  INFO Root WebApplicationContext: initialization completed in 2072 ms
+[2025-03-05 00:51:55.906]  INFO configure file is ./store/users.properties
+[2025-03-05 00:51:55.925]  INFO Try to start service thread:FileWatchService started:false lastThread:null
+[2025-03-05 00:51:55.928]  INFO Succeed to start FileWatcherService
+[2025-03-05 00:51:55.929]  INFO FileWatchService service started
+[2025-03-05 00:51:56.566]  INFO Initializing ExecutorService 'applicationTaskExecutor'
+[2025-03-05 00:51:56.699]  INFO Adding welcome page: class path resource [static/index.html]
+[2025-03-05 00:51:56.923]  INFO Initializing ExecutorService 'taskScheduler'
+[2025-03-05 00:51:56.945]  INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+[2025-03-05 00:51:57.016]  INFO Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+[2025-03-05 00:51:57.046]  INFO Tomcat started on port(s): 8080 (http) with context path ''
+[2025-03-05 00:51:57.051]  INFO Started App in 4.587 seconds (JVM running for 5.151)
+[2025-03-05 00:52:00.541]  INFO Try to start service thread:PullMessageService started:false lastThread:null
+[2025-03-05 00:52:00.543]  INFO Try to start service thread:RebalanceService started:false lastThread:null
+[2025-03-05 00:52:00.547]  INFO create MQAdmin instance ClientConfig [namesrvAddr=rocketmq:9876, clientIP=172.18.0.2, instanceName=1741107120191, clientCallbackExecutorThreads=16, pollNameServerInterval=30000, heartbeatBrokerInterval=30000, persistConsumerOffsetInterval=5000, pullTimeDelayMillsWhenException=1000, unitMode=false, unitName=null, vipChannelEnabled=true, useTLS=false, language=JAVA, namespace=null] success.
+[2025-03-05 00:52:31.757]  INFO start time: 6.516 μs
+[2025-03-05 00:52:31.763]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:52:31.765]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:53:33.309]  INFO start time: 1.473 μs
+[2025-03-05 00:53:33.313]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:53:33.314]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:54:33.700]  INFO start time: 1.085 μs
+[2025-03-05 00:54:33.708]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:54:33.709]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:55:33.688]  INFO start time: 980.0 ns
+[2025-03-05 00:55:33.692]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:55:33.693]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:56:33.736]  INFO start time: 691.0 ns
+[2025-03-05 00:56:33.742]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:56:33.743]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:57:33.735]  INFO start time: 770.0 ns
+[2025-03-05 00:57:33.738]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:57:33.738]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:58:31.957]  INFO start time: 928.0 ns
+[2025-03-05 00:58:31.961]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:58:31.962]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 00:59:31.606]  INFO start time: 1.131 μs
+[2025-03-05 00:59:31.609]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 00:59:31.609]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:00:30.107]  INFO start time: 821.0 ns
+[2025-03-05 01:00:30.112]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:00:30.113]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:01:30.065]  INFO start time: 855.0 ns
+[2025-03-05 01:01:30.071]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:01:30.072]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:02:30.089]  INFO start time: 869.0 ns
+[2025-03-05 01:02:30.094]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:02:30.096]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:03:30.024]  INFO start time: 1.647 μs
+[2025-03-05 01:03:30.028]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:03:30.032]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:04:30.074]  INFO start time: 269.0 ns
+[2025-03-05 01:04:30.077]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:04:30.079]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:05:30.077]  INFO start time: 790.0 ns
+[2025-03-05 01:05:30.081]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:05:30.082]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:06:30.043]  INFO start time: 567.0 ns
+[2025-03-05 01:06:30.046]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:06:30.047]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:07:23.410]  INFO Starting App v1.0.0 on d0d8ace72ba7 with PID 159 (/home/app/console/rocketmq-console.jar started by app in /home/app/console)
+[2025-03-05 01:07:23.416]  INFO No active profile set, falling back to default profiles: default
+[2025-03-05 01:07:25.254]  INFO Tomcat initialized with port(s): 8080 (http)
+[2025-03-05 01:07:25.274]  INFO Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+[2025-03-05 01:07:25.275]  INFO Starting service [Tomcat]
+[2025-03-05 01:07:25.276]  INFO Starting Servlet engine: [Apache Tomcat/9.0.29]
+[2025-03-05 01:07:25.351]  INFO Initializing Spring embedded WebApplicationContext
+[2025-03-05 01:07:25.352]  INFO Root WebApplicationContext: initialization completed in 1873 ms
+[2025-03-05 01:07:26.162]  INFO configure file is ./store/users.properties
+[2025-03-05 01:07:26.193]  INFO Try to start service thread:FileWatchService started:false lastThread:null
+[2025-03-05 01:07:26.196]  INFO Succeed to start FileWatcherService
+[2025-03-05 01:07:26.198]  INFO FileWatchService service started
+[2025-03-05 01:07:26.985]  INFO Initializing ExecutorService 'applicationTaskExecutor'
+[2025-03-05 01:07:27.165]  INFO Adding welcome page: class path resource [static/index.html]
+[2025-03-05 01:07:27.443]  INFO Initializing ExecutorService 'taskScheduler'
+[2025-03-05 01:07:27.468]  INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+[2025-03-05 01:07:27.565]  INFO Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+[2025-03-05 01:07:27.599]  INFO Tomcat started on port(s): 8080 (http) with context path ''
+[2025-03-05 01:07:27.606]  INFO Started App in 4.649 seconds (JVM running for 5.278)
+[2025-03-05 01:07:30.380]  INFO Try to start service thread:PullMessageService started:false lastThread:null
+[2025-03-05 01:07:30.382]  INFO Try to start service thread:RebalanceService started:false lastThread:null
+[2025-03-05 01:07:30.388]  INFO create MQAdmin instance ClientConfig [namesrvAddr=rocketmq:9876, clientIP=172.18.0.3, instanceName=1741108050142, clientCallbackExecutorThreads=16, pollNameServerInterval=30000, heartbeatBrokerInterval=30000, persistConsumerOffsetInterval=5000, pullTimeDelayMillsWhenException=1000, unitMode=false, unitName=null, vipChannelEnabled=true, useTLS=false, language=JAVA, namespace=null] success.
+[2025-03-05 01:07:30.628]  INFO start time: 3.611 μs
+[2025-03-05 01:07:30.632]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:07:30.633]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:08:30.032]  INFO start time: 1.294 μs
+[2025-03-05 01:08:30.040]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:08:30.042]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:09:30.022]  INFO start time: 920.0 ns
+[2025-03-05 01:09:30.026]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:09:30.027]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:10:30.015]  INFO start time: 1.271 μs
+[2025-03-05 01:10:30.022]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:10:30.023]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:11:30.012]  INFO start time: 1.085 μs
+[2025-03-05 01:11:30.016]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:11:30.017]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:12:30.077]  INFO start time: 906.0 ns
+[2025-03-05 01:12:30.082]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:12:30.083]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:13:30.052]  INFO start time: 540.0 ns
+[2025-03-05 01:13:30.056]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:13:30.057]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
+[2025-03-05 01:14:30.060]  INFO start time: 1.723 μs
+[2025-03-05 01:14:30.064]  WARN Exception caught: mqAdminExt get broker stats data TOPIC_PUT_NUMS failed
+[2025-03-05 01:14:30.065]  WARN Response [CODE: 1  DESC: The stats <TOPIC_PUT_NUMS> <DefaultCluster_REPLY_TOPIC> not exist
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] 
